@@ -57,7 +57,7 @@ If you get this error:
 
 ```could not find ./../linux_rh60/vsim```
 
-Open vsim file with your text editor and change ```vco="linux_rh60"``` to ```vso="linux"```. Also change ```mode=${MTI_VCO_MODE:-""}``` to ```mode=${MTI_VCO_MODE:="32"}```
+Open vsim file with your text editor and change ```vco="linux_rh60"``` to ```vco="linux"```. Also change ```mode=${MTI_VCO_MODE:-""}``` to ```mode=${MTI_VCO_MODE:="32"}```
 
 If you get this error: 
 

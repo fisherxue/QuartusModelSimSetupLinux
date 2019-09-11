@@ -49,9 +49,9 @@ If when running quartus you have an issue with any library (I had an issue with 
 
 ***
 
-FOR MODELSIM ```./ ``` 
+FOR MODELSIM ```./vsim ``` 
 
-Verify that ModelSim runs with ```./ ```
+Verify that ModelSim runs with ```./vsim ```
 
 If you get this error: 
 

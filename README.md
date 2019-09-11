@@ -34,7 +34,7 @@ If you get this error:
 Build the package from source as per [here](https://askubuntu.com/questions/966757/libpng12-needed-for-17-10):
 
 ```
-sudo apt-get install build-essential
+sudo apt-get install build-essential zlib1g-dev
 wget https://github.com/glennrp/libpng/archive/v1.2.59.tar.gz
 tar xvfz v1.2.59.tar.gz 
 cd libpng-1.2.59/

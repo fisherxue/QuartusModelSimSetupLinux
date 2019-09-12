@@ -88,7 +88,7 @@ After this line, add:
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${dir}/lib32
 ```
 
-If things still don't work, or if you get:
+If things still don't work, or if you get an error for loading libraries similar to:
 
 ```
 error while loading shared libraries: libXft.so.2: cannot open shared object file: No such file or directory

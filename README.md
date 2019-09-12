@@ -49,6 +49,8 @@ If when running quartus you have an issue with any library (I had an issue with 
 
 For issues with JTAG USB Blaster, this has some tips: https://rocketboards.org/foswiki/Documentation/UsingUSBBlasterUnderLinux
 
+Will update with proper changes tonight
+
 ***
 
 FOR MODELSIM ```./vsim ``` 

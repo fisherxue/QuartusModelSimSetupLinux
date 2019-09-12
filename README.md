@@ -47,6 +47,8 @@ sudo ldconfig
 
 If when running quartus you have an issue with any library (I had an issue with libstdc++), just replace the one in the quartus/linux64 directory with a symlink to the system version. 
 
+For issues with JTAG USB Blaster, this has some tips: https://rocketboards.org/foswiki/Documentation/UsingUSBBlasterUnderLinux
+
 ***
 
 FOR MODELSIM ```./vsim ``` 

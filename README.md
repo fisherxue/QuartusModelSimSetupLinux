@@ -1,7 +1,19 @@
 # QuartusModelSimSetupLinux
 Setup for Quartus and ModelSim on Linux. Useful for (for example) CPEN 211 and CPEN 311 at UBC
 
-This was done on Pop!OS 19.04, an Ubuntu derivative
+This was done on Pop!OS 19.04, an Ubuntu derivative.
+
+Hardware (that may matter):
+
+AMD Ryzen 3600 
+
+MSI B450 Gaming Pro Carbon AC
+
+Kernel: 5.0.0-27-generic 
+
+With this, I was able to get the CPEN 311 lab 0 sample to work. Will post a video when I get the time. 
+
+Please see ```installed.txt``` for current installed packages. 
 
 Doing it on Windows is substantially easier. 
 

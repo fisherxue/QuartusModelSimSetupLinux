@@ -49,7 +49,19 @@ If when running quartus you have an issue with any library (I had an issue with 
 
 For issues with JTAG USB Blaster, this has some tips: https://rocketboards.org/foswiki/Documentation/UsingUSBBlasterUnderLinux
 
-Will update with proper changes tonight
+I put the following into ```/etc/udev/rules.d/92-usbblaster.rules```
+
+```
+# USB-Blaster
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6001", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6002", MODE="0666"
+
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6003", MODE="0666"
+
+# USB-Blaster II
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6010", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6810", MODE="0666"
+```
 
 ***
 

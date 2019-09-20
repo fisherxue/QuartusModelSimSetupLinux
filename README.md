@@ -1,21 +1,25 @@
-# QuartusModelSimSetupLinux
+## Welcome to Linux Setup Instructions for Quartus and ModelSim
+
 Setup for Quartus and ModelSim on Linux. Useful for (for example) CPEN 211 and CPEN 311 at UBC
 
-This was done on Pop!OS 19.04, an Ubuntu derivative.
-
-Hardware (that may matter):
-
-AMD Ryzen 3600 
-
-MSI B450 Gaming Pro Carbon AC
-
-Kernel: 5.0.0-27-generic 
-
-With this, I was able to get the CPEN 311 lab 0 sample to work. Will post a video when I get the time. 
-
-Please see ```installed.txt``` for current installed packages. 
-
-Doing it on Windows is substantially easier. 
+Tested on:
+<ol> 
+  <li>
+    <ul>
+      <li>PopOS 19.04</li>
+      <li>Kernel: 5.0.0-27-generic</li>
+      <li>Ryzen 3600</li>
+      <li>B450 Gaming Pro AC Carbon</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>PopOS 18.04</li>
+      <li>Kernel: 5.0.0-23-generic </li>
+      <li>i7-5600U</li>
+    </ul>
+  </li>
+</ol>
 
 Download your software [here](http://fpgasoftware.intel.com/17.1/)
 
@@ -29,13 +33,13 @@ Move the tar to whatever directory and run ```tar -xvf <.tar file>```
 
 I was unable to get the ./setup.sh script to work. It would finish installing, but the window would not terminate. Hence:
 
-Install Quartus and ModelSim separately. Install Quartus with device support, but without Quartus Help stuff. 
+Install Quartus and ModelSim separately. Install Quartus with device support, but without Quartus Help. 
 
 Following works with Quartus Prime Lite Edition 17.1, but should work with minor modifications on other versions
 
 ***
 
-FOR QUARTUS ```./QuartusLiteSetup-17.1.0.590-linux.run``` 
+### QUARTUS ```./QuartusLiteSetup-17.1.0.590-linux.run``` 
 
 Verify that Quartus runs with ```./$QUARTUSHOME/bin/quartus ```
 
@@ -77,7 +81,7 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6810", MODE="0666"
 
 ***
 
-FOR MODELSIM ```./vsim ``` 
+### MODELSIM ```./vsim ``` 
 
 Verify that ModelSim runs with ```./vsim ```
 
@@ -125,8 +129,7 @@ Try:
 sudo apt install gcc-multilib g++-multilib lib32z1 lib32stdc++6 lib32gcc1 expat:i386 fontconfig:i386 libfreetype6:i386 libexpat1:i386 libc6:i386 libgtk-3-0:i386 libcanberra0:i386 libice6:i386 libsm6:i386 libncurses5:i386 zlib1g:i386 libx11-6:i386 libxau6:i386 libxdmcp6:i386 libxext6:i386 libxft2:i386 libxrender1:i386 libxt6:i386 libxtst6:i386 
 ```
 
-If you get an issue where the built-in editor size has font size too small, open ```~/.modelsim``` and modify
-
-```textFontV2 {{FONT} 12}``` into ```textFontV2 {{FONT} -12}```
-
+If you get an issue where the built-in editor size has font size too small, open ```~/.modelsim``` and find
+```textFontV2 ```
+Then modify the font size to be -12 (or -{FONTSIZE})
 
